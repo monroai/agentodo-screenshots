@@ -1,0 +1,475 @@
+{
+  "version": 1,
+  "updatedAt": "2026-05-04T21:37:35.940Z",
+  "entries": {
+    "memory:memory/2026-05-01.md:1:25": {
+      "key": "memory:memory/2026-05-01.md:1:25",
+      "path": "memory/2026-05-01.md",
+      "startLine": 1,
+      "endLine": 25,
+      "source": "memory",
+      "snippet": "# 2026-05-01 ## AgenToDo UI/UX Review — First Full Cycle ### What Happened - Previous session did full screenshot review, wrote findings to `reviews/agentodo-review-177DA06F.md`, then hung before filing issues - After restart: filed 10 issues (#234–243, #248), responded to comments, closed invalid ones - 14 issues fixed by the team already (fast turnaround) - 9 issues still open ### Lessons Learned (from Oleksandr's feedback) 1. **Always attach screenshots** — multiple issues got \"attach screenshot\" comments. No excuses. 2. **Verify which app you're looking at** — filed #241 about Claude's sidebar thinking it was AgenToDo. Embarrassing. 3. **Know standard UI patterns** — #218 was just a c",
+      "recallCount": 7,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 7,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-01T23:09:10.413Z",
+      "lastRecalledAt": "2026-05-04T21:37:35.940Z",
+      "queryHashes": [
+        "e60b19ea7190",
+        "fb7bfd61f08c",
+        "7c8d076abb8d",
+        "f3072089b1ce",
+        "42886afc2edf",
+        "2252c2d37630",
+        "40aa0b58c14a"
+      ],
+      "recallDays": [
+        "2026-05-02",
+        "2026-05-03",
+        "2026-05-05"
+      ],
+      "conceptTags": [
+        "ui/ux",
+        "agentodo",
+        "review",
+        "first",
+        "full",
+        "cycle",
+        "what",
+        "happened"
+      ]
+    },
+    "memory:memory/2026-05-01.md:36:57": {
+      "key": "memory:memory/2026-05-01.md:36:57",
+      "path": "memory/2026-05-01.md",
+      "startLine": 36,
+      "endLine": 57,
+      "source": "memory",
+      "snippet": "- **The product IS the experience.** Don't file \"the color is slightly off\" — file \"this misleads the user because...\" - **Root cause > symptom.** Always dig into the code. Attach the file + line number. - **One issue = one clear fix.** If the fix isn't obvious from the report, rewrite it. - **Would this ship at Apple?** That's the bar. Not \"is this technically broken\" but \"would a user feel delighted?\" - **Simplify, don't add.** Default to removing clutter, not adding features. The calendar banner doesn't need a dismiss button — it needs to not exist in the main view. - **Cross-platform = one product.** If iOS and macOS show different numbers for the same data, the product is broken. Period",
+      "recallCount": 6,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 6,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-01T23:09:10.413Z",
+      "lastRecalledAt": "2026-05-04T21:37:35.940Z",
+      "queryHashes": [
+        "e60b19ea7190",
+        "fb7bfd61f08c",
+        "7c8d076abb8d",
+        "f3072089b1ce",
+        "2252c2d37630",
+        "40aa0b58c14a"
+      ],
+      "recallDays": [
+        "2026-05-02",
+        "2026-05-03",
+        "2026-05-05"
+      ],
+      "conceptTags": [
+        "cross-platform",
+        "product",
+        "experience",
+        "don't",
+        "color",
+        "slightly",
+        "off",
+        "misleads"
+      ]
+    },
+    "memory:memory/2026-05-01.md:18:39": {
+      "key": "memory:memory/2026-05-01.md:18:39",
+      "path": "memory/2026-05-01.md",
+      "startLine": 18,
+      "endLine": 39,
+      "source": "memory",
+      "snippet": "7. **File issues as you go** — don't batch. Session can hang, context can be lost. ### Rules for Future Reviews - Crop and attach a screenshot to EVERY issue - File each issue immediately upon discovery - Triple-check which window/app is in frame - Default stance: \"should this exist?\" before \"this is missing\" - Know platform conventions (time indicators, standard controls) before flagging - When in doubt, propose simplification over addition ### Screenshot Workflow for Issues 1. Capture relevant screenshot with `screencapture -o -x <path>` 2. Crop to highlight the bug area with `sips --cropToHeightWidth H W --cropOffset Y X` 3. Copy to `/tmp/agentodo-screenshots/` and `git add . && git com",
+      "recallCount": 5,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 5,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-01T23:09:10.413Z",
+      "lastRecalledAt": "2026-05-04T21:37:35.940Z",
+      "queryHashes": [
+        "e60b19ea7190",
+        "fb7bfd61f08c",
+        "7c8d076abb8d",
+        "2252c2d37630",
+        "40aa0b58c14a"
+      ],
+      "recallDays": [
+        "2026-05-02",
+        "2026-05-03",
+        "2026-05-05"
+      ],
+      "conceptTags": [
+        "triple-check",
+        "window/app",
+        "tmp/agentodo-screenshots",
+        "issues",
+        "don't",
+        "batch",
+        "can",
+        "hang"
+      ]
+    },
+    "memory:memory/2026-05-01.md:55:80": {
+      "key": "memory:memory/2026-05-01.md:55:80",
+      "path": "memory/2026-05-01.md",
+      "startLine": 55,
+      "endLine": 80,
+      "source": "memory",
+      "snippet": "2. **Verify which app you're looking at** — filed #241 about Claude's sidebar thinking it was AgenToDo. Embarrassing. 3. **Know standard UI patterns** — #218 was just a current time indicator in calendar view. Basic stuff. 4. **Don't assume setup context** — #234, onboarding wasn't bugged, data was pre-loaded intentionally. 5. **\"Different\" ≠ \"wrong\"** — #243 pagination style was intentional design. Read the design language before applying HIG dogmatically. 6. **Question the premise first** — #229 was filed as \"missing subtitle\" when the right take was \"subtitles are clutter, remove them.\" Think like Jobs: simplify, don't add. 7. **File issues as you go** — don't batch. Session can hang, con",
+      "recallCount": 6,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 6,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-01T23:09:10.413Z",
+      "lastRecalledAt": "2026-05-04T21:37:35.940Z",
+      "queryHashes": [
+        "e60b19ea7190",
+        "fb7bfd61f08c",
+        "7c8d076abb8d",
+        "acb13e021ed7",
+        "b7634f8d0d9c",
+        "40aa0b58c14a"
+      ],
+      "recallDays": [
+        "2026-05-02",
+        "2026-05-03",
+        "2026-05-05"
+      ],
+      "conceptTags": [
+        "pre-loaded",
+        "verify",
+        "which",
+        "app",
+        "you're",
+        "looking",
+        "filed",
+        "claude's"
+      ]
+    },
+    "memory:memory/2026-05-01.md:114:139": {
+      "key": "memory:memory/2026-05-01.md:114:139",
+      "path": "memory/2026-05-01.md",
+      "startLine": 114,
+      "endLine": 139,
+      "source": "memory",
+      "snippet": "- **#254** — All tag pills use same green color (confirmed in Tags view — all 8 tags identical green) ### Issues Updated - **#255** — Added root cause from code: sidebar uses `$0.inInbox && $0.parentTaskId == nil && $0.status == .active`, suggestion engine uses `$0.project == nil` — completely different predicates ### Interaction Testing Notes - Tasks require **double-click** to select (single click doesn't work) — possibly intentional but unintuitive - Context menu has: Complete, Unflag, Edit Title, Add Person, Convert to →, Convert to Group, Drop Task - Context menu still missing: due date, tag, project assignment (rely on inspector panel) - Quick Entry (File > Quick Entry) works well fo",
+      "recallCount": 3,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 3,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-01T23:09:10.413Z",
+      "lastRecalledAt": "2026-05-04T21:37:35.940Z",
+      "queryHashes": [
+        "e60b19ea7190",
+        "f3072089b1ce",
+        "40aa0b58c14a"
+      ],
+      "recallDays": [
+        "2026-05-02",
+        "2026-05-05"
+      ],
+      "conceptTags": [
+        "0.ininbox",
+        "0.parenttaskid",
+        "0.status",
+        "0.project",
+        "double-click",
+        "all",
+        "tag",
+        "pills"
+      ]
+    },
+    "memory:memory/2026-05-01.md:299:318": {
+      "key": "memory:memory/2026-05-01.md:299:318",
+      "path": "memory/2026-05-01.md",
+      "startLine": 299,
+      "endLine": 318,
+      "source": "memory",
+      "snippet": "- **#387**: ROOT CAUSE — session.isActive = false immediately hides chat - **#388**: \"Reach out to Mom\" suggestion is invasive - **#389**: Chip labels promise features that don't work - **#390**: No onboarding after API key configured - **#391**: No visibility into API token usage/cost - **#392**: ProcessingView never renders — perspective shown during AI call - **#393**: Microphone button has no recording feedback - **#394**: Entire task database sent in every prompt — privacy concern - **#395**: \"Weekly review due\" doesn't connect to Review perspective - **#396**: CommandBarHistory can infinite-recurse - **#397**: Response parsing relies on exact JSON — fragile - **#398**: No command histo",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.6315884374538376,
+      "maxScore": 0.6315884374538376,
+      "firstRecalledAt": "2026-05-01T23:09:10.413Z",
+      "lastRecalledAt": "2026-05-01T23:09:10.413Z",
+      "queryHashes": [
+        "e60b19ea7190"
+      ],
+      "recallDays": [
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "session.isactive",
+        "usage/cost",
+        "infinite-recurse",
+        "root",
+        "cause",
+        "false",
+        "immediately",
+        "hides"
+      ]
+    },
+    "memory:memory/2026-05-02.md:35:49": {
+      "key": "memory:memory/2026-05-02.md:35:49",
+      "path": "memory/2026-05-02.md",
+      "startLine": 35,
+      "endLine": 49,
+      "source": "memory",
+      "snippet": "**Swift 6 + XCTest is broken:** The UI test base class uses `@MainActor` but `XCTestCase.setUpWithError()` is `nonisolated` in Swift 6. Every `XCTContext.runActivity` closure also triggers sendability errors. Fix: set UI test target to `SWIFT_VERSION: 5.0` + `SWIFT_STRICT_CONCURRENCY: minimal` in project.yml. **Signing cert expired:** \"Apple Development: Monro AI (F38256T2W2)\" was invalid. Oleksandr fixed it mid-session. Ad-hoc signing (`CODE_SIGN_IDENTITY=-`) works for building but NOT for running UI tests (entitlements require real signing). **Location features are architecturally ambitious but half-baked:** - CLMonitor crashes on macOS with WhenInUse auth (needs Always) - Cross-device d",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 2,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-03T03:20:06.219Z",
+      "lastRecalledAt": "2026-05-03T03:20:09.144Z",
+      "queryHashes": [
+        "acb13e021ed7",
+        "b7634f8d0d9c"
+      ],
+      "recallDays": [
+        "2026-05-03"
+      ],
+      "conceptTags": [
+        "xctestcase.setupwitherror",
+        "xctcontext.runactivity",
+        "swift-version",
+        "5.0",
+        "swift-strict-concurrency",
+        "project.yml",
+        "mid-session",
+        "ad-hoc"
+      ]
+    },
+    "memory:memory/2026-05-01.md:74:100": {
+      "key": "memory:memory/2026-05-01.md:74:100",
+      "path": "memory/2026-05-01.md",
+      "startLine": 74,
+      "endLine": 100,
+      "source": "memory",
+      "snippet": "- Task: find 20+ more issues, 3 at a time, think like Steve Jobs, actually use the app - Can't build from CLI (xcode-select points to CommandLineTools, needs sudo to fix) - Used existing DerivedData build + took screenshots of all perspectives ### Screenshots Captured - Today view (with \"AI not set up yet\" state) - Inbox (with tasks and triage banner) - Forecast (grouped by day — Today/Tomorrow/Monday May 4) - Flagged (7 items, all with flag icons) - Calendar (week view, \"Calendar access needed\" banner) - Review (weekly review with 5 projects \"Never reviewed\") - Projects list (5 active projects with counts and dates) - Waiting On (grouped by person — Anna Kovalenko, David Chen) - Nearby (\"L",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 2,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-03T03:20:06.219Z",
+      "lastRecalledAt": "2026-05-03T03:20:09.144Z",
+      "queryHashes": [
+        "acb13e021ed7",
+        "b7634f8d0d9c"
+      ],
+      "recallDays": [
+        "2026-05-03"
+      ],
+      "conceptTags": [
+        "xcode-select",
+        "today/tomorrow/monday",
+        "task",
+        "find",
+        "issues",
+        "time",
+        "think",
+        "like"
+      ]
+    },
+    "memory:memory/2026-05-02.md:46:54": {
+      "key": "memory:memory/2026-05-02.md:46:54",
+      "path": "memory/2026-05-02.md",
+      "startLine": 46,
+      "endLine": 54,
+      "source": "memory",
+      "snippet": "**Attachment system has a marker problem:** Notes store raw `{{att:UUID:storedName}}` markers that are only rendered by the MarkdownEditor. Any other context (CLI, widget, export, clipboard) shows the raw markers. No fallback rendering. ### Lessons Learned (New) 1. **Run the existing tests first.** The app had a full XCUITest suite that was failing to compile AND had 76% failure rate. Running these tests early would have identified the background-thread issue much sooner. 2. **Code review catches more than screenshots.** On a Mac mini without a display/mouse, deep code review found issues I never would have caught visually — threading violations, race conditions, dedup logic bugs, missing v",
+      "recallCount": 3,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 3,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-03T03:20:06.219Z",
+      "lastRecalledAt": "2026-05-03T07:12:44.398Z",
+      "queryHashes": [
+        "acb13e021ed7",
+        "b7634f8d0d9c",
+        "2252c2d37630"
+      ],
+      "recallDays": [
+        "2026-05-03"
+      ],
+      "conceptTags": [
+        "background-thread",
+        "display/mouse",
+        "attachment",
+        "has",
+        "marker",
+        "problem",
+        "store",
+        "raw"
+      ]
+    },
+    "memory:memory/2026-05-01.md:299:328": {
+      "key": "memory:memory/2026-05-01.md:299:328",
+      "path": "memory/2026-05-01.md",
+      "startLine": 299,
+      "endLine": 328,
+      "source": "memory",
+      "snippet": "- **#387**: ROOT CAUSE — session.isActive = false immediately hides chat - **#388**: \"Reach out to Mom\" suggestion is invasive - **#389**: Chip labels promise features that don't work - **#390**: No onboarding after API key configured - **#391**: No visibility into API token usage/cost - **#392**: ProcessingView never renders — perspective shown during AI call - **#393**: Microphone button has no recording feedback - **#394**: Entire task database sent in every prompt — privacy concern - **#395**: \"Weekly review due\" doesn't connect to Review perspective - **#396**: CommandBarHistory can infinite-recurse - **#397**: Response parsing relies on exact JSON — fragile - **#398**: No command histo",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-03T07:12:41.402Z",
+      "lastRecalledAt": "2026-05-03T07:12:41.402Z",
+      "queryHashes": [
+        "42886afc2edf"
+      ],
+      "recallDays": [
+        "2026-05-03"
+      ],
+      "conceptTags": [
+        "session.isactive",
+        "usage/cost",
+        "infinite-recurse",
+        "root",
+        "cause",
+        "false",
+        "immediately",
+        "hides"
+      ]
+    },
+    "memory:memory/2026-05-01.md:319:347": {
+      "key": "memory:memory/2026-05-01.md:319:347",
+      "path": "memory/2026-05-01.md",
+      "startLine": 319,
+      "endLine": 347,
+      "source": "memory",
+      "snippet": "## Live AI Testing — Session 2 (02:38–02:50, May 2) ### Setup - Used screencapture + cliclick + osascript accessibility for live app interaction - Screen: 1600×900 points (3200×1800 Retina), cliclick uses points, image pixels ÷ 2 ### Key Findings **Working features:** - **Enrich chip** — successfully adds notes, updates time estimates, adds checklist items - **\"What now?\" chip** — shows polished \"Next Task\" card with AI reasoning, Start button, action chips - **ProcessingView** — \"Thinking...\" sparkle animation renders correctly now (was broken before) - **Triage button** — fires correctly, shows agent chat panel, sends well-structured prompt **Broken features:** - **Triage** — AI says \"",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-03T07:12:41.402Z",
+      "lastRecalledAt": "2026-05-03T07:12:41.402Z",
+      "queryHashes": [
+        "42886afc2edf"
+      ],
+      "recallDays": [
+        "2026-05-03"
+      ],
+      "conceptTags": [
+        "well-structured",
+        "live",
+        "testing",
+        "may",
+        "setup",
+        "used",
+        "screencapture",
+        "cliclick"
+      ]
+    },
+    "memory:memory/2026-05-01.md:133:155": {
+      "key": "memory:memory/2026-05-01.md:133:155",
+      "path": "memory/2026-05-01.md",
+      "startLine": 133,
+      "endLine": 155,
+      "source": "memory",
+      "snippet": "### Session Total: 9 new issues filed (#270-#280), 1 pre-existing confirmed (#254), 1 updated (#255) ## QA Testing Session — Batch 2 (22:00–22:15) ### New issues filed: - **#273**: Today view: zero tasks visible above the fold — suggestions + promo card bury everything - **#274**: Grammar \"them\" vs \"it\" — CLOSED (fix exists at 559ab69, needs merge) - **#275**: Progress bar green when overcommitted (10h 45m of 9h) - **#276**: Quick Entry panel survives Cmd+W — orphaned floating panel - **#277**: Quick Entry Estimate shows \"min\" twice (placeholder + suffix) - **#281**: Calendar banner has no dismiss button — permanently blocks tasks - **#282**: Weekly review + End of day suggestions share .e",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-03T07:12:41.402Z",
+      "lastRecalledAt": "2026-05-03T07:12:41.402Z",
+      "queryHashes": [
+        "42886afc2edf"
+      ],
+      "recallDays": [
+        "2026-05-03"
+      ],
+      "conceptTags": [
+        "pre-existing",
+        "total",
+        "new",
+        "issues",
+        "filed",
+        "pre",
+        "existing",
+        "confirmed"
+      ]
+    },
+    "memory:memory/2026-05-01.md:189:216": {
+      "key": "memory:memory/2026-05-01.md:189:216",
+      "path": "memory/2026-05-01.md",
+      "startLine": 189,
+      "endLine": 216,
+      "source": "memory",
+      "snippet": "Active: #270, #271, #272, #273, #275, #276, #277, #281, #282, #283, #284, #285, #286, #287, #288, #289, #290 Closed: #274 (fix exists, needs merge) Pre-existing updated: #254, #255 ## QA Testing — Hands-on Usage (22:45–22:56) ### New issues filed: - **#291**: Triage banner count stale after task completion (shows 15 when badge shows 14) - **#292**: Toast \"Completed 1 task(s)\" — lazy pluralization in 3 places - **#293**: Inspector stuck on completed task — clicking other tasks has no effect after cleanup ### Findings from actual usage: - Task completion flow works (Edit → Status → Complete), nice animation with green ✓ - Quick Entry works well (File > Quick Entry), task saved to Inbox corr",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-03T07:12:41.402Z",
+      "lastRecalledAt": "2026-05-03T07:12:41.402Z",
+      "queryHashes": [
+        "42886afc2edf"
+      ],
+      "recallDays": [
+        "2026-05-03"
+      ],
+      "conceptTags": [
+        "pre-existing",
+        "hands-on",
+        "active",
+        "closed",
+        "fix",
+        "exists",
+        "needs",
+        "merge"
+      ]
+    },
+    "memory:memory/2026-05-02.md:53:64": {
+      "key": "memory:memory/2026-05-02.md:53:64",
+      "path": "memory/2026-05-02.md",
+      "startLine": 53,
+      "endLine": 64,
+      "source": "memory",
+      "snippet": "5. **File size limits are easy to forget.** The attachment system has no size cap. Same for OmniFocus imports (no cancel). Always ask: \"what if the input is 100x larger than expected?\" 6. **Batch filing with subagents is efficient.** Filing 20 issues per subagent, with pre-written descriptions, takes ~3 minutes per batch. Much faster than filing one at a time. 7. **The signing certificate expires/revokes periodically.** Always check `security find-identity -v -p codesigning` before starting a test session that needs real signing. ### Architecture Notes - **Build system:** XcodeGen → xcodebuild. Must run `xcodegen generate` after project.yml changes. - **DEVELOPER_DIR** must point to `/Appli",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-03T07:12:44.398Z",
+      "lastRecalledAt": "2026-05-03T07:12:44.398Z",
+      "queryHashes": [
+        "2252c2d37630"
+      ],
+      "recallDays": [
+        "2026-05-03"
+      ],
+      "conceptTags": [
+        "pre-written",
+        "expires/revokes",
+        "find-identity",
+        "project.yml",
+        "developer-dir",
+        "size",
+        "limits",
+        "easy"
+      ]
+    }
+  }
+}
