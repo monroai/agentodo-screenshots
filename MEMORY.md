@@ -97,7 +97,7 @@
 14. **"Fixed" doesn't mean fixed** — always verify. #419 survived 356 commits. Trust screenshots over commit messages.
 15. **Performance bugs hide behind feature bugs** — 12 unfiltered fetches in ContentView were invisible until I specifically scanned for `FetchDescriptor<TodoTask>()` patterns.
 
-### From Oleksandr's Feedback (May 5)
+### From Oleksandr's Feedback (May 5) — Round 1
 16. **🐾 MacPaw branding is the LOGO** — the paw/"by MacPaw" in the sidebar is their company signature. NEVER file it as a bug. It's intentional branding.
 17. **CHECK CLOSED ISSUES BEFORE RE-FILING** — I filed #1040/#1044/#1047 (sidebar nav), #1041 (badge counts), #1046 (keyboard shortcuts) as new issues when they were ALREADY FIXED and closed (#800/#852/#809). Always check closed issues with comments before filing a duplicate.
 18. **BUILD FRESH BEFORE TESTING** — many of my May 4 evening issues were filed against a stale build. The fixes were already merged. Always `git pull && xcodegen generate && build` before a new test session.
@@ -105,12 +105,17 @@
 20. **"By design" means CLOSE IT** — #815 (shortcuts blocked in Settings), #565 (Nuclear Reset no undo), #812 (chat bubble glitch), #847 (voice feedback exists) — all closed by Oleksandr. Don't re-file "by design" decisions.
 21. **Don't reopen closed issues without verifying the fix is actually broken** — Oleksandr closed issues for a reason. If something looks wrong, first check the closed issue comments, then build fresh, then test. Only file new if confirmed regression.
 
+### From Oleksandr's Feedback (May 5) — Round 2
+22. **SCREENSHOTS MANDATORY — CALLED OUT AGAIN** — Issues #1073, #1077, #1081, #1084-1086, #1088-1090 were all filed without screenshots. Oleksandr caught it immediately. This is the SECOND time. NO MORE EXCUSES. Screenshot → push to repo → reference in issue body. Every. Single. Time.
+23. **INCLUDE SYSTEM/BUILD INFO** — Intel Mac mini + older macOS renders differently than Apple Silicon + Tahoe. Every issue needs: hardware, OS version, build type, Xcode version, screen resolution. Devs can't reproduce without knowing the platform.
+
 ## Issue Quality Bar
 - One issue = one clear fix. If the fix isn't obvious, rewrite.
 - Root cause > symptom. Attach file + line number.
 - Would this ship at Apple? That's the bar.
 - Simplify, don't add. Remove clutter over adding features.
-- **Attach screenshots** — use `monroai/agentodo-screenshots` repo.
+- **🚨 SCREENSHOTS ARE MANDATORY — NO EXCEPTIONS 🚨** — Every issue MUST have at least one screenshot attached BEFORE filing. Push to `monroai/agentodo-screenshots` repo first, then reference in the issue body. If you can't screenshot it, say "code review only" explicitly. Oleksandr has called this out TWICE (May 1 and May 5). DO NOT FILE WITHOUT SCREENSHOTS.
+- **🚨 SYSTEM INFO IS MANDATORY 🚨** — Every issue MUST include system/build details: Hardware (Intel/AS), macOS version, app build type (ad-hoc/signed), Xcode version, screen resolution. On Intel + older OS the app renders differently — devs need this context.
 - **CHECK CLOSED ISSUES FIRST** — search for related closed issues before filing. Read Oleksandr's comments.
 - **BUILD FRESH** — always test against latest `main` with a fresh build.
 - **READ THE DOCS** — check AGENTS.md, README.md, PATTERNS.md for current shortcuts/behavior.
@@ -144,10 +149,12 @@
 - **ContentView.swift** — split from 2100 to 1389 lines ✅
 - **Notification observers** — potential leak if observer outlives expected scope.
 
-## Project Stats (May 5)
-- **Total issues filed:** ~400+
-- **Open:** ~80 (many are P2/P3 enhancement requests)
-- **Commits since May 3:** 1,536+
+## Project Stats (May 6)
+- **Total issues filed:** ~570+ (400 from May 1-4, 63 on May 5 afternoon, 100 on May 5-6 night)
+- **May 5 afternoon sweep:** 63 issues (#1135–#1213) — menus, settings, calendar, empty states, inspector, sidebar, cross-view consistency
+- **May 5-6 night sweep:** 100 issues (#1242–#1341) — P1 task selection/sidebar nav broken, sharing missing, calendar polish, inspector missing fields, keyboard nav, settings, drag-and-drop, system integration
+- **Key P1 bugs found:** #1242 sidebar navigation broken (clicks go to Tags), #1243 task selection doesn't work (inspector stays No Selection), #1264 right-click context menus don't work, #1292 no Share Sheet integration
+- **Open:** ~240+
 - **Incorrectly filed & closed:** 9 issues (May 4 evening batch — stale build + didn't check closed issues)
 
 ## Key Shortcuts (VERIFIED)

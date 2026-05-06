@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-05-04T21:37:35.940Z",
+  "updatedAt": "2026-05-06T06:03:53.340Z",
   "entries": {
     "memory:memory/2026-05-01.md:1:25": {
       "key": "memory:memory/2026-05-01.md:1:25",
@@ -469,6 +469,68 @@
         "size",
         "limits",
         "easy"
+      ]
+    },
+    "memory:memory/2026-05-04.md:1:25": {
+      "key": "memory:memory/2026-05-04.md:1:25",
+      "path": "memory/2026-05-04.md",
+      "startLine": 1,
+      "endLine": 25,
+      "source": "memory",
+      "snippet": "# 2026-05-04 — Post-1536-Commit Review ## Context Oleksandr asked me to check latest git updates, test, and report. 1536 commits since May 3. 297 issues closed total, 30 still open. ## Closed Issues Verified ✅ ### P0 Critical Fixes — ALL CONFIRMED FIXED - **#419/#800/#852 — Sidebar off-by-one / navigation broken** — THE zombie bug. Survived 356 commits on May 2. NOW FIXED after 1536 commits. Tested: clicking Inbox→Today→Forecast→Flagged→Waiting On→Review→Projects all navigate correctly. - **#850 — Nuclear Reset crash** — Fixed (`cc44341`: clear selection state before nuclear reset to prevent @Query crash) - **#832 — Quick Entry focus trap after AI enrichment** — Fixed (`0d8000e`) - **#831",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-06T06:03:53.340Z",
+      "lastRecalledAt": "2026-05-06T06:03:53.340Z",
+      "queryHashes": [
+        "434c258189b9"
+      ],
+      "recallDays": [
+        "2026-05-06"
+      ],
+      "conceptTags": [
+        "post-1536-commit",
+        "off-by-one",
+        "post",
+        "commit",
+        "review",
+        "context",
+        "oleksandr",
+        "asked"
+      ]
+    },
+    "memory:memory/2026-05-05.md:1:25": {
+      "key": "memory:memory/2026-05-05.md:1:25",
+      "path": "memory/2026-05-05.md",
+      "startLine": 1,
+      "endLine": 25,
+      "source": "memory",
+      "snippet": "# 2026-05-05 ## AgenToDo Visual UI Testing Session — Post-Fix Review ### What Happened - Built app from latest source (post-1536-commit + additional PRs #1037-#1039) - Ran visual UI testing across all perspectives: Inbox, Today, Forecast, Flagged, Waiting On, Review, Calendar, Completed, Projects, Tags - Did code review of SidebarView, TagListView, TaskRowView, QuickEntryView, QuickOpenView, GTDRules - Filed 43 new issues (#1040–#1082) ### Key Findings 1. **P1: Navigation desync** (#1040, #1044, #1047) — sidebar selection disconnects from content view, gets completely stuck. This is the #1 blocker for release. 2. **P1: SidebarView.swift grew to 3,571 lines** (#1053) — ContentView was spli",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-06T06:03:53.340Z",
+      "lastRecalledAt": "2026-05-06T06:03:53.340Z",
+      "queryHashes": [
+        "434c258189b9"
+      ],
+      "recallDays": [
+        "2026-05-06"
+      ],
+      "conceptTags": [
+        "post-fix",
+        "post-1536-commit",
+        "sidebarview.swift",
+        "agentodo",
+        "visual",
+        "testing",
+        "post",
+        "fix"
       ]
     }
   }
